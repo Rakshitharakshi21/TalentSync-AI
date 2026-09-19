@@ -2,524 +2,594 @@
 
 ### **Your next great hire might already be inside your organization.**
 
-**TalentSync AI** is an AI-powered internal talent discovery platform that helps organizations uncover, understand, and connect employee capabilities with the right opportunities.
+**TalentSync AI** is an AI-powered internal talent discovery platform that helps organizations discover employee capabilities and connect them with relevant opportunities.
 
-Instead of searching only by **job title or keywords**, TalentSync AI focuses on the bigger picture:
+Instead of relying only on job titles and keyword searches, TalentSync AI focuses on the relationship between:
 
-> **Who has the capabilities needed to solve this problem?**
-
----
-
-## 🌐 LIVE DEMO
-
-# 👉 [**TalentSync AI — Try the Live Application**](https://talentsync-ai-ajyl.onrender.com/)
-
-**🚀 Fully deployed and ready to explore.**
+**People → Skills → Experience → Requirements → Opportunities**
 
 ---
 
-## 🧩 The Problem
+# 🌐 LIVE DEMO
 
-Organizations often know *who works for them*.
+## 🚀 **https://talentsync-ai-ajyl.onrender.com/**
 
-The harder question is:
+> **The application is live. Try the product before reading the rest of the README.**
 
-### **Do they know what their people are capable of?**
+---
 
-A traditional employee directory might tell you:
+# 🧠 The Problem
+
+Organizations often have valuable skills hidden inside their existing workforce.
+
+The challenge isn't always finding *people*.
+
+It's finding the **right people for the right opportunity**.
+
+Traditional systems frequently depend on:
+
+* Job titles
+* Departments
+* Exact keyword matches
+* Manual profile screening
+* Static employee records
+
+But professional capability is rarely that simple.
+
+Someone's actual capabilities can be hidden inside their:
+
+* Projects
+* Technical experience
+* Previous responsibilities
+* Skills
+* Certifications
+* Descriptions of work
+
+### TalentSync AI turns this problem into an intelligence problem.
+
+---
+
+# 💡 The Solution
+
+TalentSync AI creates an AI-assisted layer between employee profiles and organizational opportunities.
 
 ```text
-Name
-Role
-Department
+Employee Information
+        │
+        ▼
+   AI Processing
+        │
+        ▼
+Skill & Capability Understanding
+        │
+        ▼
+Opportunity Requirements
+        │
+        ▼
+   Intelligent Matching
+        │
+        ▼
+Relevant Talent
+```
+
+The central idea is simple:
+
+> **Don't just search for a job title. Search for capability.**
+
+---
+
+# ✨ What Makes TalentSync Different?
+
+### Traditional approach
+
+```text
+Job Title
+    ↓
+Keyword Search
+    ↓
+Profile
+```
+
+### TalentSync approach
+
+```text
+Opportunity
+    ↓
+Understand Requirements
+    ↓
+Identify Relevant Capabilities
+    ↓
+Understand Employee Profiles
+    ↓
+Semantic / Contextual Matching
+    ↓
+Relevant Talent
+```
+
+This allows the platform to move from **literal matching** toward **capability-oriented discovery**.
+
+---
+
+# 🛠️ TECH STACK
+
+## 🎨 Frontend
+
+| Technology     | Purpose                             |
+| -------------- | ----------------------------------- |
+| **React.js**   | Building the interactive frontend   |
+| **JavaScript** | Application logic and interactions  |
+| **CSS**        | Styling and responsive presentation |
+
+## ⚙️ Backend
+
+| Technology    | Purpose                          |
+| ------------- | -------------------------------- |
+| **Python**    | Backend and AI integration       |
+| **FastAPI**   | API layer and backend services   |
+| **REST APIs** | Frontend ↔ backend communication |
+
+## 🤖 AI / Intelligence
+
+| Technology                          | Purpose                                    |
+| ----------------------------------- | ------------------------------------------ |
+| **Large Language Model / AI layer** | Understanding profiles and requirements    |
+| **NLP**                             | Processing natural-language information    |
+| **Semantic Matching**               | Connecting capabilities with opportunities |
+| **Prompt-based reasoning**          | Generating contextual insights             |
+
+## ☁️ Deployment
+
+| Technology       | Purpose                           |
+| ---------------- | --------------------------------- |
+| **Render**       | Production deployment             |
+| **Git / GitHub** | Version control and collaboration |
+
+> **Note:** Replace/add the exact model, database, and library names used in the implementation if they are part of your repository. The README should always reflect the actual codebase.
+
+---
+
+# 🏗️ SYSTEM ARCHITECTURE
+
+```text
+                         ┌──────────────────────┐
+                         │        USER          │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │   REACT FRONTEND    │
+                         │                      │
+                         │ Profiles             │
+                         │ Talent Search        │
+                         │ Opportunities        │
+                         │ Results              │
+                         └──────────┬───────────┘
+                                    │
+                              REST / HTTP
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │     FASTAPI          │
+                         │      BACKEND         │
+                         │                      │
+                         │ Request Handling     │
+                         │ Business Logic       │
+                         │ Talent Processing    │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │     AI ENGINE        │
+                         │                      │
+                         │ NLP Processing       │
+                         │ Capability Analysis  │
+                         │ Context Understanding│
+                         │ Matching             │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │  MATCHED TALENT      │
+                         │                      │
+                         │ Relevant Profiles    │
+                         │ Skills               │
+                         │ Experience           │
+                         └──────────────────────┘
+```
+
+---
+
+# 🔬 AI PIPELINE
+
+The intelligence layer can be understood as a multi-stage process.
+
+### 01 — Profile Understanding
+
+Employee information is collected and interpreted.
+
+```text
+Profile
+  ↓
+Skills
+  ↓
 Experience
+  ↓
+Projects
+  ↓
+Capabilities
 ```
 
-But real capability is much richer.
+### 02 — Requirement Understanding
 
-An employee's skills may come from:
+The system interprets what an opportunity actually requires.
 
-* Projects they've built
-* Technologies they've worked with
-* Problems they've solved
-* Cross-functional experience
-* Transferable skills
-* Interests and areas of expertise
+```text
+Opportunity
+    ↓
+Required Skills
+    ↓
+Required Experience
+    ↓
+Relevant Capabilities
+```
 
-When this information is difficult to discover, organizations can overlook valuable internal talent and unnecessarily search outside the company.
+### 03 — Capability Matching
 
-### **Talent exists. Visibility doesn't always.**
+Employee capabilities are compared against opportunity requirements.
+
+```text
+Employee Capability
+          +
+Opportunity Requirement
+          ↓
+    AI Matching
+          ↓
+   Relevance Result
+```
+
+### 04 — Talent Discovery
+
+The system surfaces relevant employees so that humans can evaluate them.
 
 ---
 
-# 💡 Our Idea
+# 🧩 SEMANTIC MATCHING
 
-TalentSync AI creates an intelligent bridge between **people and opportunities**.
+One of the important ideas behind TalentSync AI is that **similar capabilities can be expressed using completely different words**.
 
-```text
-        EMPLOYEE
-           │
-           ▼
-     Skills & Experience
-           │
-           ▼
-    ┌───────────────┐
-    │  TalentSync   │
-    │      AI       │
-    └───────┬───────┘
-            │
-            ▼
-     Capability Match
-            │
-            ▼
-       OPPORTUNITY
-```
-
-The platform is designed to help organizations move from:
-
-**"Who has this title?"**
-
-to:
-
-**"Who can actually do this?"**
-
----
-
-# 🧠 The Core Concept
-
-TalentSync AI treats **capability** as more important than simply matching words.
-
-Consider two profiles:
-
-```text
-Person A
-"Backend Developer"
-```
-
-and
-
-```text
-Person B
-"Software Engineer"
-
-Experience:
-• Built REST APIs
-• Developed backend services
-• Worked with databases
-• Designed scalable applications
-```
-
-A title-based system may overlook Person B for a backend opportunity.
-
-A capability-oriented system asks:
-
-> **What can this person actually contribute?**
-
-That's the thinking behind TalentSync AI.
-
----
-
-# 🔎 From Profile → Capability → Opportunity
-
-The platform follows a simple intelligence pipeline:
-
-```text
-┌───────────────────────┐
-│    PEOPLE & PROFILES  │
-│                       │
-│ Skills • Experience   │
-│ Projects • Roles     │
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│   AI UNDERSTANDING    │
-│                       │
-│ Context • Skills      │
-│ Experience • Relevance│
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│   CAPABILITY MATCHING │
-│                       │
-│ Person ↔ Requirement  │
-└───────────┬───────────┘
-            │
-            ▼
-┌───────────────────────┐
-│     OPPORTUNITY       │
-│                       │
-│ Role • Project • Need │
-└───────────────────────┘
-```
-
----
-
-# ✨ What TalentSync AI Enables
-
-### 🔍 Intelligent Talent Discovery
-
-Discover people based on relevant skills and experience instead of relying exclusively on job titles.
-
-### 🧩 Capability-Based Matching
-
-Connect employee capabilities with role, project, or opportunity requirements.
-
-### 🧠 Context-Aware Understanding
-
-Professional experience is rarely expressed in one standardized vocabulary. AI can help interpret the context behind different descriptions of similar capabilities.
-
-### 🔄 Internal Mobility
-
-Surface employees who may be suitable for new roles, projects, or responsibilities.
-
-### 🎯 Smarter Workforce Discovery
-
-Give organizations a clearer view of the capabilities already present within their workforce.
-
----
-
-# 🆚 Beyond Keyword Search
-
-Traditional search:
-
-```text
-"Machine Learning"
-        ↓
-Find profiles containing
-"Machine Learning"
-```
-
-TalentSync AI aims for:
-
-```text
-             REQUIREMENT
-                  │
-                  ▼
-        Understand the need
-                  │
-                  ▼
-        Identify capabilities
-                  │
-                  ▼
-      Understand employee data
-                  │
-                  ▼
-       Find relevant people
-```
-
-Because the same capability can be described in many different ways.
+For example:
 
 ```text
 "Built REST APIs"
 
 "Developed backend services"
 
-"Created web APIs"
+"Created scalable web APIs"
 
-"Designed server-side systems"
+"Worked on server-side architecture"
 ```
 
-Different words.
+A purely literal keyword search may treat these differently.
 
-Potentially related capabilities.
+An AI-powered system can instead reason about their **semantic relationship**.
 
-**That's where intelligent matching becomes valuable.**
+This makes the platform more suitable for real-world professional data, where terminology is inconsistent.
 
 ---
 
-# 🏗️ System Architecture
-
-At a high level, TalentSync AI is structured around four layers:
+# 🔄 DATA FLOW
 
 ```text
-┌─────────────────────────────────────────┐
-│              USER LAYER                 │
-│                                         │
-│  Talent Discovery • Profiles • Search   │
-└───────────────────┬─────────────────────┘
-                    │
-                    ▼
-┌─────────────────────────────────────────┐
-│           APPLICATION LAYER             │
-│                                         │
-│  Business Logic • Workflows • Matching  │
-└───────────────────┬─────────────────────┘
-                    │
-                    ▼
-┌─────────────────────────────────────────┐
-│              AI LAYER                   │
-│                                         │
-│  Understanding • Skill Intelligence     │
-│  Relevance • Contextual Matching        │
-└───────────────────┬─────────────────────┘
-                    │
-                    ▼
-┌─────────────────────────────────────────┐
-│              DATA LAYER                 │
-│                                         │
-│  Profiles • Skills • Experience         │
-│  Roles • Opportunities                  │
-└─────────────────────────────────────────┘
+                    ┌──────────────┐
+                    │ Employee Data│
+                    └──────┬───────┘
+                           │
+                           ▼
+                 ┌──────────────────┐
+                 │ Profile Processing│
+                 └────────┬─────────┘
+                          │
+                          ▼
+                 ┌──────────────────┐
+                 │ AI Understanding │
+                 └────────┬─────────┘
+                          │
+                          ▼
+                   Capability Model
+                          │
+                          │
+                          ▼
+                 ┌──────────────────┐
+                 │ Opportunity Data │
+                 └────────┬─────────┘
+                          │
+                          ▼
+                 Requirement Analysis
+                          │
+                          ▼
+                  Matching Engine
+                          │
+                          ▼
+                Relevant Talent Set
 ```
-
-This separation also makes the platform extensible for future enterprise integrations and additional intelligence capabilities.
 
 ---
 
-# 🤖 Why AI?
+# 🔌 APPLICATION LAYER
 
-AI isn't being used as decoration.
+The frontend and backend communicate through API endpoints.
 
-It addresses a very specific challenge:
-
-## **Human capability is difficult to represent with rigid fields.**
-
-Consider:
-
-> "Led a team that built a real-time analytics dashboard using Python and cloud services."
-
-A structured profile might store:
+Conceptually:
 
 ```text
-Role: Developer
+React Client
+     │
+     │ HTTP Request
+     ▼
+FastAPI Backend
+     │
+     ├── Validate Request
+     │
+     ├── Process Data
+     │
+     ├── Invoke AI Layer
+     │
+     └── Generate Response
+     │
+     ▼
+React Client
+     │
+     ▼
+Display Talent Intelligence
 ```
 
-But the sentence contains significantly richer information about:
-
-* Technical skills
-* Leadership
-* Project experience
-* Domain exposure
-* Architecture experience
-* Cloud familiarity
-
-AI can help transform this kind of unstructured professional information into something that can participate in intelligent discovery.
+This separation keeps the presentation layer independent from the intelligence and business-logic layers.
 
 ---
 
-# 🛠️ Technology
+# 📁 PROJECT STRUCTURE
 
-TalentSync AI combines modern web application development with an AI-powered intelligence layer.
-
-### 🎨 Frontend
-
-* Responsive web interface
-* Interactive user experience
-* Structured talent discovery workflows
-* Modern component-based UI
-
-### ⚙️ Application Layer
-
-* API-driven architecture
-* Business logic
-* Talent processing
-* Matching workflows
-
-### 🧠 AI Layer
-
-* Natural Language Processing
-* Semantic understanding
-* Skill interpretation
-* Context-aware relevance
-* Intelligent matching
-
-### ☁️ Deployment
-
-* **Render**
-* Live production deployment
-
-> The architecture is designed to remain extensible as additional models, data sources, matching strategies, and enterprise integrations are introduced.
-
----
-
-# 🔬 A Capability-First Mental Model
-
-TalentSync AI can be thought of as a network:
+A typical high-level structure is:
 
 ```text
-                 ┌───────────┐
-                 │   PEOPLE  │
-                 └─────┬─────┘
-                       │
-                       ▼
-                 ┌───────────┐
-                 │  SKILLS   │
-                 └─────┬─────┘
-                       │
-              ┌────────┴────────┐
-              ▼                 ▼
-        ┌───────────┐     ┌───────────┐
-        │ PROJECTS  │     │ EXPERIENCE│
-        └─────┬─────┘     └─────┬─────┘
-              │                 │
-              └────────┬────────┘
-                       ▼
-                ┌─────────────┐
-                │ CAPABILITY  │
-                └──────┬──────┘
-                       │
-                       ▼
-                ┌─────────────┐
-                │ OPPORTUNITY │
-                └─────────────┘
+TalentSync-AI/
+│
+├── frontend/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   └── ...
+│
+├── backend/
+│   ├── routes/
+│   ├── services/
+│   ├── models/
+│   └── ...
+│
+├── ai/
+│   ├── prompts/
+│   ├── matching/
+│   └── ...
+│
+├── README.md
+└── ...
 ```
 
-This creates a foundation for something much larger than an employee search tool:
-
-### **A continuously evolving map of organizational capability.**
+> Adapt this section to the exact repository structure before committing if your folders differ.
 
 ---
 
-# 🎯 Real-World Use Cases
+# 🧪 ENGINEERING CONSIDERATIONS
+
+TalentSync AI is designed with several practical engineering principles in mind.
+
+### Separation of concerns
+
+Frontend, backend, and AI responsibilities are separated so each layer can evolve independently.
+
+### API-driven architecture
+
+The frontend communicates with backend services through APIs rather than coupling UI logic directly to AI processing.
+
+### Extensibility
+
+The intelligence layer can evolve independently as newer models and matching strategies become available.
+
+### Human-in-the-loop
+
+AI surfaces relevant talent; final organizational decisions remain with people.
+
+### Deployment-ready architecture
+
+The application is deployed as a live web application rather than remaining a local prototype.
+
+---
+
+# 🔐 RESPONSIBLE AI
+
+Talent intelligence involves sensitive professional information.
+
+A production-ready system should therefore consider:
+
+* Data privacy
+* Authentication
+* Authorization
+* Secure API communication
+* Employee consent
+* Explainability
+* Bias detection
+* Human review
+* Data retention policies
+
+TalentSync AI is intended to **assist decision-making, not autonomously decide someone's career path.**
+
+---
+
+# 🎯 USE CASES
 
 ### 🏢 Internal Hiring
 
-Identify employees whose capabilities align with an open internal position.
+Find employees who may already possess the capabilities required for an open role.
 
 ### 🚀 Project Staffing
 
-Discover potential team members based on complementary skills.
+Identify people with complementary technical and domain skills.
 
 ### 🔄 Internal Mobility
 
-Help employees and organizations identify new opportunities within the company.
+Discover potential transitions between roles.
 
 ### 📊 Workforce Intelligence
 
-Understand what capabilities exist across departments and teams.
+Understand the distribution of capabilities across an organization.
 
-### 📚 Skill Development
+### 📚 Skill Gap Analysis
 
-Identify capability gaps that could be addressed through training and upskilling.
+Compare existing capabilities with future organizational requirements.
 
 ---
 
-# 🔐 Responsible Talent Intelligence
+# 🔮 FUTURE ENGINEERING ROADMAP
 
-Talent decisions directly affect people's careers.
+TalentSync AI can evolve into a complete workforce intelligence ecosystem.
 
-For that reason, TalentSync AI follows a **human-in-the-loop philosophy**.
+### 🕸️ Skill Graph
 
 ```text
-             AI
-              │
-              ▼
-       Discover relevance
-              │
-              ▼
-       Surface candidates
-              │
-              ▼
-        Human review
-              │
-              ▼
-       Final decision
+People
+  ↕
+Skills
+  ↕
+Projects
+  ↕
+Roles
+  ↕
+Opportunities
 ```
 
-AI should help people **discover possibilities**, not make irreversible career decisions by itself.
-
-A production-scale implementation should therefore consider:
-
-* 🔒 Data privacy
-* 🛡️ Access control
-* 🔍 Explainability
-* ⚖️ Fairness and bias monitoring
-* 👤 Human oversight
-
----
-
-# 🚀 Future Vision
-
-TalentSync AI can evolve from talent discovery into a broader **AI-powered workforce intelligence platform**.
-
-### 🕸️ Organizational Skill Graph
-
-Connect:
-
-**People ↔ Skills ↔ Projects ↔ Roles ↔ Opportunities**
-
-### 📈 Skill Gap Intelligence
-
-Compare current organizational capabilities against future requirements.
+### 📈 Skill Gap Engine
 
 ```text
-Current Capabilities
+Current Workforce
         ↓
-Future Requirements
+Required Capabilities
         ↓
-     Skill Gaps
+Difference Analysis
         ↓
-Training / Hiring / Mobility
+Skill Gaps
+        ↓
+Learning / Hiring Recommendations
 ```
 
-### 🤝 AI Project Team Builder
+### 🤝 AI Team Builder
 
-Recommend potential project teams based on complementary capabilities.
+Automatically identify complementary combinations of employees for project requirements.
 
-### 🧭 AI Career Navigator
+### 🧭 Career Copilot
 
-Help employees discover internal opportunities aligned with their skills and career direction.
+Provide employees with personalized internal career opportunities based on their evolving skill profiles.
 
-### 🌐 Enterprise Intelligence
+### 🧠 Continuous Talent Intelligence
 
-Integrate talent intelligence into larger HR, project management, and workforce planning ecosystems.
+Keep capability profiles updated as employees complete projects, acquire skills, and gain experience.
 
 ---
 
-# 🏆 Why TalentSync?
+# 🏆 THE BIGGER VISION
 
-Because organizations don't simply have **employees**.
+TalentSync AI isn't trying to build another employee directory.
 
-They have:
+It is trying to answer a more meaningful question:
 
-> **Skills. Experience. Potential. Knowledge.**
+> ### **"What talent do we already have that we haven't discovered yet?"**
 
-And much of that capability can remain invisible when systems are built around titles and static profiles.
-
-TalentSync AI aims to make that hidden capability **discoverable**.
+The long-term vision is a workforce where:
 
 ```text
-        PEOPLE
-           ↓
-      CAPABILITIES
-           ↓
-      OPPORTUNITIES
-           ↓
-          IMPACT
+          PEOPLE
+             ↓
+        CAPABILITIES
+             ↓
+         OPPORTUNITIES
+             ↓
+           IMPACT
 ```
 
-### **Don't just search for talent. Discover what your organization already has.**
+The result is a shift from **title-based talent discovery** to **capability-based talent intelligence**.
 
 ---
 
-# 👥 Team
+# 🚀 GET STARTED
+
+## Prerequisites
+
+Make sure you have:
+
+* Node.js
+* Python
+* Git
+* Required environment variables
+* AI/API credentials used by the application
+
+## Clone
+
+```bash
+git clone <repository-url>
+cd TalentSync-AI
+```
+
+## Install frontend dependencies
+
+```bash
+cd frontend
+npm install
+```
+
+## Start frontend
+
+```bash
+npm run dev
+```
+
+## Install backend dependencies
+
+```bash
+cd backend
+pip install -r requirements.txt
+```
+
+## Start backend
+
+```bash
+uvicorn main:app --reload
+```
+
+> Update the commands above to match the exact repository structure and entry points.
+
+---
+
+# 🌐 LIVE APPLICATION
+
+## **https://talentsync-ai-ajyl.onrender.com/**
+
+### **Don't just search for talent. Discover it.**
+
+---
+
+# 👥 TEAM
 
 ## **TechZen**
 
-| Team Member     | Specialization                             |
+| Member          | Specialization                             |
 | --------------- | ------------------------------------------ |
 | **Diya Vinod**  | Artificial Intelligence & Machine Learning |
 | **Rakshitha V** | Computer Science & Engineering             |
-
-### Built with curiosity, engineering, and a vision to make talent discovery smarter. ⚡
-
----
-
-# 🌐 Experience TalentSync AI
-
-## **Live Application**
-
-### 👉 https://talentsync-ai-ajyl.onrender.com/
-
-**The product is live. Go explore it. 🚀**
 
 ---
 
 <div align="center">
 
-# ⚡ TalentSync AI
+## ⚡ TalentSync AI
 
 ### **Discover capability. Connect opportunity. Unlock potential.**
 
